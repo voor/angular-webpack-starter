@@ -20,10 +20,10 @@
 </head>
 
 <body>
-  <h1>Gulp Angular Webpack</h1>
+  <div ui-view></div>
   {% block content %}{% endblock %}
-  <script src="{{ app }}"></script>
   <script src="{{ shared }}"></script>
+  <script src="{{ app }}"></script>
   {% block javascript %}{% endblock %}
 </body>
 
