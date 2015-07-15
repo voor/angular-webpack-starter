@@ -1,0 +1,30 @@
+{#
+  Nunjucks!
+  Homepage: https://mozilla.github.io/nunjucks/
+  Docs: https://mozilla.github.io/nunjucks/api.html
+#}
+
+<!doctype html>
+<html ng-app="app" ng-strict-di>
+
+<head>
+  <title>{% block title %}Angular App{% endblock %}</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+  <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Roboto:400,500,700,400italic'>
+  <link rel="stylesheet" href="/css/app.css"> {% block head %}{% endblock %}
+</head>
+
+<body>
+  <h1>Gulp Angular Webpack</h1>
+  {% block content %}{% endblock %}
+  <script src="{{ app }}"></script>
+  <script src="{{ shared }}"></script>
+  {% block javascript %}{% endblock %}
+</body>
+
+</html>
