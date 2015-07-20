@@ -15,8 +15,9 @@
   <meta name="description" content="">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
 
+  <base href="/">
   <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Roboto:400,500,700,400italic'>
-  <link rel="stylesheet" href="/css/app.css"> {% block head %}{% endblock %}
+  <link rel="stylesheet" href="/css/main.css"> {% block head %}{% endblock %}
 </head>
 
 <body>
@@ -24,6 +25,7 @@
   {% block content %}{% endblock %}
   <script src="{{ shared }}"></script>
   <script src="{{ app }}"></script>
+  {{ devMode }}
   {% block javascript %}{% endblock %}
 </body>
 

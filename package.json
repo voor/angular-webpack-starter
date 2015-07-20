@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/greypants/gulp-starter.git"
+    "url": "git://github.com/voor/angular-webpack-starter.git"
   },
   "scripts": {
     "test": "gulp karma"
