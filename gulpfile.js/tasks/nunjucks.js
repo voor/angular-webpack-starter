@@ -34,12 +34,15 @@ gulp.task('nunjucks', ['webpack'], function() {
 });
 
 function getWebpackManifest(file) {
+
+  var webpackProxyServer = 'http://localhost:5050';
   if (process.env.NODE_ENV == 'production') {
     return require(path.join(process.cwd(), paths.publicDirectory, "rev-manifest.json"));
   } else {
     return {
-      app: "/js/app.js",
-      shared: "/js/shared.js"
+      app: webpackProxyServer + '/js/app.js',
+      shared: webpackProxyServer + "/js/shared.js",
+      devMode: '<script src="' + webpackProxyServer + '/webpack-dev-server.js"></script>'
     };
   }
 }

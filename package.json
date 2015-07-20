@@ -65,7 +65,7 @@
     "angular": "~1.4.2",
     "angular-ui-router": "~0.2.15",
     "angular-aria": "~1.4.2",
-    "angular-animate": "~1.4.2",
+    "angular-animate": "~1.4.3",
     "angular-material": "~0.10.0",
     "gulp-jshint": "~1.11.2",
     "plato": "~1.5.0",
@@ -74,6 +74,21 @@
     "glob": "~5.0.13",
     "jasmine-core": "~2.3.4",
     "karma-jasmine": "~0.3.6",
-    "gulp-data": "~1.2.0"
+    "gulp-data": "~1.2.0",
+    "gulp-task-listing": "~1.0.1",
+    "angular-sanitize": "~1.4.3",
+    "source-map": "~0.4.4",
+    "loader-utils": "~0.2.11",
+    "baggage-loader": "~0.2.2",
+    "html-loader": "~0.3.0",
+    "moment": "~2.10.3",
+    "angular-toastr": "~1.4.1",
+    "webpack-dev-server": "~1.10.1",
+    "file-loader": "~0.8.4",
+    "url-loader": "~0.5.6",
+    "node-sass": "~3.2.0",
+    "webpack-dev-middleware": "~1.2.0",
+    "ng-annotate-loader": "0.0.6",
+    "bardjs": "~0.1.4"
   }
 }

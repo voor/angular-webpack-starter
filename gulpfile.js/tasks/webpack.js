@@ -4,6 +4,10 @@ var gulp = require('gulp');
 var logger = require('../lib/compileLogger');
 var webpack = require('webpack');
 var browserSync = require('browser-sync');
+var WebpackDevServer = require("webpack-dev-server");
+var path = require('path');
+
+var paths = require('../lib/paths');
 
 gulp.task('webpack', ['analyze'], function(callback) {
   var built = false;
@@ -13,17 +17,21 @@ gulp.task('webpack', ['analyze'], function(callback) {
   if (process.env.NODE_ENV == 'production') {
     webpack(config, function(err, stats) {
       logger(err, stats);
-      callback();
+      callback(err);
     });
   } else {
-    webpack(config).watch(200, function(err, stats) {
-      logger(err, stats);
-      browserSync.reload();
-      // On the initial compile, let gulp know the task is done
-      if (!built) {
-        built = true;
-        callback();
+
+    var compiler = webpack(config);
+
+    var server = new WebpackDevServer(compiler, {
+      // webpack-dev-server options
+      publicPath: '/js/',
+      stats: {
+        colors: true
       }
+    });
+    server.listen(5050, "localhost", function() {
+      callback();
     });
   }
 });

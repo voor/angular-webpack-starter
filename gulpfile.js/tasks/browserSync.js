@@ -6,6 +6,7 @@ var config = {
   server: {
     baseDir: paths.publicDirectory
   },
+
   files: ['dist/client/**/*.html']
 };
 
