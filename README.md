@@ -2,7 +2,7 @@
 
 Simple example application that uses resources from [gulp-starter](https://github.com/greypants/gulp-starter) to create an [Angular 1.4](https://angularjs.org/) application packaging resources with [Webpack](http://webpack.github.io/).
 
-[![GitTip](http://img.shields.io/gittip/voor.svg)](https://gittip.com/voor)
+[![Gratipay](https://img.shields.io/gratipay/voor.svg)](https://gratipay.com/voor)
 [![Dependency status](https://david-dm.org/voor/angular-webpack-starter.svg)](https://david-dm.org/voor/angular-webpack-starter)
 [![devDependency Status](https://david-dm.org/voor/angular-webpack-starter/dev-status.svg)](https://david-dm.org/voor/angular-webpack-starter#info=devDependencies)
 [![Build Status](https://secure.travis-ci.org/voor/angular-webpack-starter.svg?branch=master)](https://travis-ci.org/voor/angular-webpack-starter)
