@@ -81,7 +81,7 @@
     "loader-utils": "~0.2.11",
     "baggage-loader": "~0.2.2",
     "html-loader": "~0.3.0",
-    "moment": "~2.10.3",
+    "moment": "~2.20.1",
     "angular-toastr": "~1.4.1",
     "webpack-dev-server": "~1.10.1",
     "file-loader": "~0.8.4",
